@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
     macAddress = addr
   });
 
-  res.send(`Mac Address ${macAddress}`);
+  res.send(`Mac Address ${macAddress} \n IP ${address.ip()}`);
 })
 
 app.listen(port, () => {
